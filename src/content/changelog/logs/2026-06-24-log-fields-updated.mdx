@@ -1,0 +1,18 @@
+---
+title: New Logpush datasets and updated fields across multiple Logpush datasets in Cloudflare Logs
+description: New Logpush datasets are now available, and fields have been updated across multiple Logpush datasets in Cloudflare Logs.
+date: 2026-06-24
+---
+
+Cloudflare has updated [Logpush datasets](/logs/logpush/logpush-job/datasets/):
+
+### New datasets
+
+- **WebSocket Analytics**: A new dataset with fields including `BytesReceivedClient`, `BytesReceivedOrigin`, `BytesSentClient`, `BytesSentOrigin`, `ClientASN`, `ClientIP`, `ClientRequestHost`, `ClientRequestPath`, `ClientRequestUserAgent`, `ColoCode`, `ConnectionCloseReason`, `ConnectionCloseSource`, `ConnectionID`, `ConnectionTransportCloseCode`, `EdgeEndTimestamp`, `EdgeStartTimestamp`, and `RayID`.
+
+### Updated fields in existing datasets
+
+- **Firewall events** (added): `ZoneName`. The Firewall events dataset is now also available for [account-scope Logpush](/logs/logpush/logpush-job/datasets/account/firewall_events/), in addition to the existing zone scope.
+- **Email Security Alerts** (added): `BCC`, `DKIMResult`, `DMARCPolicy`, `DMARCResult`, and `SPFResult`.
+
+For the complete field definitions for each dataset, refer to [Logpush datasets](/logs/logpush/logpush-job/datasets/).
